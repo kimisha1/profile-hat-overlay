@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -8,36 +8,42 @@
 </head>
 <body>
   <header>
-    <h1>قرار دادن کلاه روی عکس</h1>
+    <h1>Put a Hat on Your Photo</h1>
     <div class="controls">
       <label class="btn">
-        انتخاب عکس
+        Choose photo
         <input id="photoInput" type="file" accept="image/*" hidden>
       </label>
+
       <div class="group">
-        <label>سایز کلاه
+        <label>Hat size
           <input id="scaleRange" type="range" min="0.2" max="3" step="0.01" value="1">
         </label>
       </div>
+
       <div class="group">
-        <label>چرخش کلاه
+        <label>Rotate hat
           <input id="rotRange" type="range" min="-180" max="180" step="1" value="0">
         </label>
       </div>
-      <button id="centerBtn" class="btn">وسط‌چین</button>
-      <button id="resetBtn" class="btn">ریست</button>
-      <button id="downloadBtn" class="btn primary">دانلود JPG</button>
+
+      <button id="centerBtn" class="btn">Center</button>
+      <button id="resetBtn" class="btn">Reset</button>
+      <button id="downloadBtn" class="btn primary">Download JPG</button>
     </div>
   </header>
+
   <main>
     <div class="canvas-wrap">
       <canvas id="c"></canvas>
     </div>
-    <p class="hint">کلاه را با موس جابه‌جا کنید، با اسکرول بزرگ/کوچیک کنید.</p>
+    <p class="hint">Tip: drag to move the hat, scroll to resize, use sliders to rotate/scale.</p>
   </main>
+
   <footer>
-    <small>© Hat Overlay</small>
+    <small>© Hat Overlay – drag / scale / rotate</small>
   </footer>
+
   <script src="app.js"></script>
 </body>
 </html>
